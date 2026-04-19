@@ -1,0 +1,108 @@
+project:
+  name: Magneto
+  root_dir: "Magneto"
+  seed: 42
+
+runtime:
+  prefer_gpu: true
+  device: "cuda"
+  num_workers: 0
+
+paths:
+  config_dir: "Magneto/config"
+  data_dir: "Magneto/data"
+  raw_data_dir: "Magneto/data/raw"
+  toy_data_dir: "Magneto/data/toy"
+  parsed_data_dir: "Magneto/data/parsed"
+  round_data_dir: "Magneto/data/rounds"
+
+  results_dir: "Magneto/results"
+  pg_dir: "Magneto/results/pg"
+  detector_dir: "Magneto/results/detector"
+  cdg_dir: "Magneto/results/cdg"
+  investigation_dir: "Magneto/results/investigation"
+  report_dir: "Magneto/results/reports"
+  log_dir: "Magneto/results/logs"
+  checkpoint_dir: "Magneto/results/checkpoints"
+  cache_dir: "Magneto/results/cache"
+
+  prompt_dir: "Magneto/prompts"
+  memory_dir: "Magneto/results/memory"
+
+data:
+  toy_dataset_name: "toy_magneto_dataset.csv"
+  total_hours: 24
+  target_num_logs: 3000
+  target_num_entities: 200
+  attack_event_budget: 30
+  round_field: "round"
+
+collector:
+  default_interval_minutes: 30
+  node_budget: 30
+  compress_repeated_edges: true
+  save_graph_format: "json"    # json / graphml
+  save_visualization: true
+  benign_label_name: "benign"
+  malicious_label_name: "malicious"
+
+embedding:
+  type_dim: 4
+  temporal_features:
+    - span
+    - mean_gap
+    - max_gap
+
+detector:
+  hidden_dim: 32
+  emb_dim: 16
+  lr: 0.001
+  weight_decay: 0.0001
+  epochs: 120
+  temperature: 0.1
+  threshold_delta: 0.4
+  n_hop: 2
+  traversal_max_length: 6
+  traversal_budget: 80
+  community_method: "leiden"
+  export_intermediate_artifacts: true
+
+cdg:
+  coi_ratio: 0.2
+  keep_structurally_relevant_communities: true
+  dependency_types:
+    - temporal_continuation
+    - anchor_based
+    - entity_alignment
+
+investigation:
+  max_rounds: 8
+  lead_memory_file: "results/memory/lead_memory.json"
+  allow_verify_trace: true
+  allow_bridge: true
+  actions:
+    - retain
+    - discard
+    - bridge
+    - verify_trace
+    - terminate
+
+reporter:
+  require_evidence_grounding: true
+  output_format: "markdown"
+  export_iocs: true
+  check_completeness: true
+
+# Please use your path and API key
+
+llm:
+  provider: "openai"
+  model: "gpt-4o-mini"
+  api_base: ""
+  api_key_env: "OPENAI_API_KEY"
+  temperature: 0.2
+  max_tokens: 4096
+
+logging:
+  level: "INFO"
+  save_console_log: true
