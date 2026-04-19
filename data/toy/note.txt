@@ -1,0 +1,1 @@
+When using other datasets, please parse the logs into the log triplet format of the reference file. "toy_magneto_dataset.csv"

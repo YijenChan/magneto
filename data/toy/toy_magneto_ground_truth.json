@@ -1,0 +1,50 @@
+{
+  "dataset_name": "toy_magneto_dataset.csv",
+  "time_window": {
+    "start": "2026-04-01 00:00:04",
+    "end": "2026-04-01 23:59:57"
+  },
+  "rows": 3000,
+  "malicious_rows": 30,
+  "benign_rows": 2970,
+  "unique_entities": 349,
+  "round_counts": {
+    "1": 1487,
+    "2": 1513
+  },
+  "stage_counts": {
+    "BENIGN": 2970,
+    "IR": 6,
+    "C&C": 5,
+    "LM": 5,
+    "PE": 5,
+    "MP": 5,
+    "C": 4
+  },
+  "malicious_entities": [
+    "domain_update-check.net",
+    "file_/etc/cron.d/sys-sync",
+    "file_/etc/hostname",
+    "file_/etc/passwd",
+    "file_/home/admin/.cache/firefox/update.bin",
+    "file_/home/admin/.ssh/id_rsa",
+    "file_/home/admin/.ssh/known_hosts",
+    "file_/home/admin/Documents/finance_q2.xlsx",
+    "file_/home/admin/Documents/hr_roster.csv",
+    "file_/proc/net/route",
+    "file_/tmp/.stage/archive_01.tar",
+    "file_/tmp/.syscache/host_targets.txt",
+    "file_/tmp/.syscache/loaderd",
+    "file_/var/tmp/.syncsvc.pid",
+    "ip_10.10.20.14",
+    "ip_10.10.20.21",
+    "ip_198.51.100.23",
+    "ip_203.0.113.50",
+    "ip_45.77.10.8",
+    "proc_firefox",
+    "proc_loaderd",
+    "proc_sshprobe",
+    "proc_syncsvc",
+    "proc_tarmini"
+  ]
+}
