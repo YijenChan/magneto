@@ -1,0 +1,14 @@
+[
+  [
+    "domain_service18.internal",
+    "proc_app_070"
+  ],
+  [
+    "file_/var/log/app_012.log",
+    "proc_app_062"
+  ],
+  [
+    "proc_app_001",
+    "proc_app_069"
+  ]
+]

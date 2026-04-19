@@ -1,0 +1,11 @@
+{
+  "pg_name": "PG_2026-04-01_12-37-30_2026-04-01_12-45-00_benign",
+  "is_benign_pg": true,
+  "is_malicious_pg": false,
+  "num_nodes": 27,
+  "num_edges": 15,
+  "num_communities": 12,
+  "num_suspicious_nodes": 2,
+  "num_candidate_subchains": 1,
+  "threshold_delta": 0.4
+}

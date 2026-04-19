@@ -1,0 +1,545 @@
+[
+  {
+    "metadata": {
+      "community_id": "C000",
+      "pg_id": "PG_2026-04-01_12-22-30_2026-04-01_12-30-00_benign",
+      "time_span": {
+        "start": "2026-04-01 12:22:30",
+        "end": "2026-04-01 12:30:00"
+      }
+    },
+    "anomaly_contexts": {
+      "suspicious_nodes": [],
+      "node_scores": {},
+      "n_hop_neighbors": {},
+      "candidate_attack_subchains": [],
+      "anomaly_density": 0.0,
+      "bridge_intensity": null
+    },
+    "boundary_cues": {
+      "matched_anchor_nodes": [
+        "proc_app_007"
+      ],
+      "split_boundary_markers": [
+        "BND_20260401120000_20260401121500",
+        "BND_20260401121500_20260401122230"
+      ]
+    },
+    "archived_traces": [
+      "[12:22:38] (proc_app_054, rotate_log, file_/var/log/app_004.log)",
+      "[12:23:28] (proc_app_077, open, file_/home/admin/docs/doc_030.txt)",
+      "[12:23:43] (proc_app_076, stat, file_/home/admin/docs/doc_038.txt)",
+      "[12:25:29] (proc_app_055, append, file_/var/log/app_045.log)",
+      "[12:26:31] (file_/home/admin/docs/doc_003.txt, copy, file_/var/log/app_025.log)",
+      "[12:27:05] (proc_sys_040, open, file_/var/log/app_023.log)",
+      "[12:27:09] (file_/var/log/app_039.log, copy, file_/var/log/app_022.log)",
+      "[12:27:12] (proc_app_039, stat, file_/var/log/app_004.log)",
+      "[12:28:02] (file_/var/log/app_016.log, spawn, proc_app_007)",
+      "[12:28:29] (proc_sys_017, heartbeat, ip_192.168.1.19)",
+      "[12:28:34] (file_/home/admin/docs/doc_017.txt, copy, file_/home/admin/docs/doc_016.txt)",
+      "[12:28:52] (file_/var/log/app_016.log, spawn, proc_app_020)",
+      "[12:28:57] (file_/var/log/app_005.log, spawn, proc_app_020)",
+      "[12:29:02] (proc_sys_002, open, file_/tmp/cache_010.dat)",
+      "[12:29:47] (proc_sys_012, rotate_log, file_/home/admin/docs/doc_036.txt)"
+    ]
+  },
+  {
+    "metadata": {
+      "community_id": "C001",
+      "pg_id": "PG_2026-04-01_12-22-30_2026-04-01_12-30-00_benign",
+      "time_span": {
+        "start": "2026-04-01 12:22:30",
+        "end": "2026-04-01 12:30:00"
+      }
+    },
+    "anomaly_contexts": {
+      "suspicious_nodes": [
+        "proc_app_039",
+        "proc_app_054"
+      ],
+      "node_scores": {
+        "proc_app_039": {
+          "d_local": 0.24579159915447235,
+          "d_comm": 0.19802390038967133,
+          "s": 1.0
+        },
+        "proc_app_054": {
+          "d_local": 0.1837633103132248,
+          "d_comm": 0.1773478239774704,
+          "s": 0.8127247095108032
+        }
+      },
+      "n_hop_neighbors": {
+        "proc_app_039": [
+          "file_/var/log/app_004.log",
+          "proc_app_054"
+        ],
+        "proc_app_054": [
+          "file_/var/log/app_004.log",
+          "proc_app_039"
+        ]
+      },
+      "candidate_attack_subchains": [
+        [
+          "file_/var/log/app_004.log",
+          "proc_app_039",
+          "proc_app_054"
+        ]
+      ],
+      "anomaly_density": 0.6666666666666666,
+      "bridge_intensity": null
+    },
+    "boundary_cues": {
+      "matched_anchor_nodes": [
+        "proc_app_054"
+      ],
+      "split_boundary_markers": [
+        "BND_20260401120000_20260401121500",
+        "BND_20260401121500_20260401122230"
+      ]
+    },
+    "archived_traces": [
+      "[12:22:38] (proc_app_054, rotate_log, file_/var/log/app_004.log)",
+      "[12:23:28] (proc_app_077, open, file_/home/admin/docs/doc_030.txt)",
+      "[12:23:43] (proc_app_076, stat, file_/home/admin/docs/doc_038.txt)",
+      "[12:25:29] (proc_app_055, append, file_/var/log/app_045.log)",
+      "[12:26:31] (file_/home/admin/docs/doc_003.txt, copy, file_/var/log/app_025.log)",
+      "[12:27:05] (proc_sys_040, open, file_/var/log/app_023.log)",
+      "[12:27:09] (file_/var/log/app_039.log, copy, file_/var/log/app_022.log)",
+      "[12:27:12] (proc_app_039, stat, file_/var/log/app_004.log)",
+      "[12:28:02] (file_/var/log/app_016.log, spawn, proc_app_007)",
+      "[12:28:29] (proc_sys_017, heartbeat, ip_192.168.1.19)",
+      "[12:28:34] (file_/home/admin/docs/doc_017.txt, copy, file_/home/admin/docs/doc_016.txt)",
+      "[12:28:52] (file_/var/log/app_016.log, spawn, proc_app_020)",
+      "[12:28:57] (file_/var/log/app_005.log, spawn, proc_app_020)",
+      "[12:29:02] (proc_sys_002, open, file_/tmp/cache_010.dat)",
+      "[12:29:47] (proc_sys_012, rotate_log, file_/home/admin/docs/doc_036.txt)"
+    ]
+  },
+  {
+    "metadata": {
+      "community_id": "C002",
+      "pg_id": "PG_2026-04-01_12-22-30_2026-04-01_12-30-00_benign",
+      "time_span": {
+        "start": "2026-04-01 12:22:30",
+        "end": "2026-04-01 12:30:00"
+      }
+    },
+    "anomaly_contexts": {
+      "suspicious_nodes": [],
+      "node_scores": {},
+      "n_hop_neighbors": {},
+      "candidate_attack_subchains": [],
+      "anomaly_density": 0.0,
+      "bridge_intensity": null
+    },
+    "boundary_cues": {
+      "matched_anchor_nodes": [],
+      "split_boundary_markers": [
+        "BND_20260401120000_20260401121500",
+        "BND_20260401121500_20260401122230"
+      ]
+    },
+    "archived_traces": [
+      "[12:22:38] (proc_app_054, rotate_log, file_/var/log/app_004.log)",
+      "[12:23:28] (proc_app_077, open, file_/home/admin/docs/doc_030.txt)",
+      "[12:23:43] (proc_app_076, stat, file_/home/admin/docs/doc_038.txt)",
+      "[12:25:29] (proc_app_055, append, file_/var/log/app_045.log)",
+      "[12:26:31] (file_/home/admin/docs/doc_003.txt, copy, file_/var/log/app_025.log)",
+      "[12:27:05] (proc_sys_040, open, file_/var/log/app_023.log)",
+      "[12:27:09] (file_/var/log/app_039.log, copy, file_/var/log/app_022.log)",
+      "[12:27:12] (proc_app_039, stat, file_/var/log/app_004.log)",
+      "[12:28:02] (file_/var/log/app_016.log, spawn, proc_app_007)",
+      "[12:28:29] (proc_sys_017, heartbeat, ip_192.168.1.19)",
+      "[12:28:34] (file_/home/admin/docs/doc_017.txt, copy, file_/home/admin/docs/doc_016.txt)",
+      "[12:28:52] (file_/var/log/app_016.log, spawn, proc_app_020)",
+      "[12:28:57] (file_/var/log/app_005.log, spawn, proc_app_020)",
+      "[12:29:02] (proc_sys_002, open, file_/tmp/cache_010.dat)",
+      "[12:29:47] (proc_sys_012, rotate_log, file_/home/admin/docs/doc_036.txt)"
+    ]
+  },
+  {
+    "metadata": {
+      "community_id": "C003",
+      "pg_id": "PG_2026-04-01_12-22-30_2026-04-01_12-30-00_benign",
+      "time_span": {
+        "start": "2026-04-01 12:22:30",
+        "end": "2026-04-01 12:30:00"
+      }
+    },
+    "anomaly_contexts": {
+      "suspicious_nodes": [],
+      "node_scores": {},
+      "n_hop_neighbors": {},
+      "candidate_attack_subchains": [],
+      "anomaly_density": 0.0,
+      "bridge_intensity": null
+    },
+    "boundary_cues": {
+      "matched_anchor_nodes": [],
+      "split_boundary_markers": [
+        "BND_20260401120000_20260401121500",
+        "BND_20260401121500_20260401122230"
+      ]
+    },
+    "archived_traces": [
+      "[12:22:38] (proc_app_054, rotate_log, file_/var/log/app_004.log)",
+      "[12:23:28] (proc_app_077, open, file_/home/admin/docs/doc_030.txt)",
+      "[12:23:43] (proc_app_076, stat, file_/home/admin/docs/doc_038.txt)",
+      "[12:25:29] (proc_app_055, append, file_/var/log/app_045.log)",
+      "[12:26:31] (file_/home/admin/docs/doc_003.txt, copy, file_/var/log/app_025.log)",
+      "[12:27:05] (proc_sys_040, open, file_/var/log/app_023.log)",
+      "[12:27:09] (file_/var/log/app_039.log, copy, file_/var/log/app_022.log)",
+      "[12:27:12] (proc_app_039, stat, file_/var/log/app_004.log)",
+      "[12:28:02] (file_/var/log/app_016.log, spawn, proc_app_007)",
+      "[12:28:29] (proc_sys_017, heartbeat, ip_192.168.1.19)",
+      "[12:28:34] (file_/home/admin/docs/doc_017.txt, copy, file_/home/admin/docs/doc_016.txt)",
+      "[12:28:52] (file_/var/log/app_016.log, spawn, proc_app_020)",
+      "[12:28:57] (file_/var/log/app_005.log, spawn, proc_app_020)",
+      "[12:29:02] (proc_sys_002, open, file_/tmp/cache_010.dat)",
+      "[12:29:47] (proc_sys_012, rotate_log, file_/home/admin/docs/doc_036.txt)"
+    ]
+  },
+  {
+    "metadata": {
+      "community_id": "C004",
+      "pg_id": "PG_2026-04-01_12-22-30_2026-04-01_12-30-00_benign",
+      "time_span": {
+        "start": "2026-04-01 12:22:30",
+        "end": "2026-04-01 12:30:00"
+      }
+    },
+    "anomaly_contexts": {
+      "suspicious_nodes": [],
+      "node_scores": {},
+      "n_hop_neighbors": {},
+      "candidate_attack_subchains": [],
+      "anomaly_density": 0.0,
+      "bridge_intensity": null
+    },
+    "boundary_cues": {
+      "matched_anchor_nodes": [],
+      "split_boundary_markers": [
+        "BND_20260401120000_20260401121500",
+        "BND_20260401121500_20260401122230"
+      ]
+    },
+    "archived_traces": [
+      "[12:22:38] (proc_app_054, rotate_log, file_/var/log/app_004.log)",
+      "[12:23:28] (proc_app_077, open, file_/home/admin/docs/doc_030.txt)",
+      "[12:23:43] (proc_app_076, stat, file_/home/admin/docs/doc_038.txt)",
+      "[12:25:29] (proc_app_055, append, file_/var/log/app_045.log)",
+      "[12:26:31] (file_/home/admin/docs/doc_003.txt, copy, file_/var/log/app_025.log)",
+      "[12:27:05] (proc_sys_040, open, file_/var/log/app_023.log)",
+      "[12:27:09] (file_/var/log/app_039.log, copy, file_/var/log/app_022.log)",
+      "[12:27:12] (proc_app_039, stat, file_/var/log/app_004.log)",
+      "[12:28:02] (file_/var/log/app_016.log, spawn, proc_app_007)",
+      "[12:28:29] (proc_sys_017, heartbeat, ip_192.168.1.19)",
+      "[12:28:34] (file_/home/admin/docs/doc_017.txt, copy, file_/home/admin/docs/doc_016.txt)",
+      "[12:28:52] (file_/var/log/app_016.log, spawn, proc_app_020)",
+      "[12:28:57] (file_/var/log/app_005.log, spawn, proc_app_020)",
+      "[12:29:02] (proc_sys_002, open, file_/tmp/cache_010.dat)",
+      "[12:29:47] (proc_sys_012, rotate_log, file_/home/admin/docs/doc_036.txt)"
+    ]
+  },
+  {
+    "metadata": {
+      "community_id": "C005",
+      "pg_id": "PG_2026-04-01_12-22-30_2026-04-01_12-30-00_benign",
+      "time_span": {
+        "start": "2026-04-01 12:22:30",
+        "end": "2026-04-01 12:30:00"
+      }
+    },
+    "anomaly_contexts": {
+      "suspicious_nodes": [],
+      "node_scores": {},
+      "n_hop_neighbors": {},
+      "candidate_attack_subchains": [],
+      "anomaly_density": 0.0,
+      "bridge_intensity": null
+    },
+    "boundary_cues": {
+      "matched_anchor_nodes": [
+        "proc_app_055"
+      ],
+      "split_boundary_markers": [
+        "BND_20260401120000_20260401121500",
+        "BND_20260401121500_20260401122230"
+      ]
+    },
+    "archived_traces": [
+      "[12:22:38] (proc_app_054, rotate_log, file_/var/log/app_004.log)",
+      "[12:23:28] (proc_app_077, open, file_/home/admin/docs/doc_030.txt)",
+      "[12:23:43] (proc_app_076, stat, file_/home/admin/docs/doc_038.txt)",
+      "[12:25:29] (proc_app_055, append, file_/var/log/app_045.log)",
+      "[12:26:31] (file_/home/admin/docs/doc_003.txt, copy, file_/var/log/app_025.log)",
+      "[12:27:05] (proc_sys_040, open, file_/var/log/app_023.log)",
+      "[12:27:09] (file_/var/log/app_039.log, copy, file_/var/log/app_022.log)",
+      "[12:27:12] (proc_app_039, stat, file_/var/log/app_004.log)",
+      "[12:28:02] (file_/var/log/app_016.log, spawn, proc_app_007)",
+      "[12:28:29] (proc_sys_017, heartbeat, ip_192.168.1.19)",
+      "[12:28:34] (file_/home/admin/docs/doc_017.txt, copy, file_/home/admin/docs/doc_016.txt)",
+      "[12:28:52] (file_/var/log/app_016.log, spawn, proc_app_020)",
+      "[12:28:57] (file_/var/log/app_005.log, spawn, proc_app_020)",
+      "[12:29:02] (proc_sys_002, open, file_/tmp/cache_010.dat)",
+      "[12:29:47] (proc_sys_012, rotate_log, file_/home/admin/docs/doc_036.txt)"
+    ]
+  },
+  {
+    "metadata": {
+      "community_id": "C006",
+      "pg_id": "PG_2026-04-01_12-22-30_2026-04-01_12-30-00_benign",
+      "time_span": {
+        "start": "2026-04-01 12:22:30",
+        "end": "2026-04-01 12:30:00"
+      }
+    },
+    "anomaly_contexts": {
+      "suspicious_nodes": [],
+      "node_scores": {},
+      "n_hop_neighbors": {},
+      "candidate_attack_subchains": [],
+      "anomaly_density": 0.0,
+      "bridge_intensity": null
+    },
+    "boundary_cues": {
+      "matched_anchor_nodes": [
+        "file_/home/admin/docs/doc_038.txt"
+      ],
+      "split_boundary_markers": [
+        "BND_20260401120000_20260401121500",
+        "BND_20260401121500_20260401122230"
+      ]
+    },
+    "archived_traces": [
+      "[12:22:38] (proc_app_054, rotate_log, file_/var/log/app_004.log)",
+      "[12:23:28] (proc_app_077, open, file_/home/admin/docs/doc_030.txt)",
+      "[12:23:43] (proc_app_076, stat, file_/home/admin/docs/doc_038.txt)",
+      "[12:25:29] (proc_app_055, append, file_/var/log/app_045.log)",
+      "[12:26:31] (file_/home/admin/docs/doc_003.txt, copy, file_/var/log/app_025.log)",
+      "[12:27:05] (proc_sys_040, open, file_/var/log/app_023.log)",
+      "[12:27:09] (file_/var/log/app_039.log, copy, file_/var/log/app_022.log)",
+      "[12:27:12] (proc_app_039, stat, file_/var/log/app_004.log)",
+      "[12:28:02] (file_/var/log/app_016.log, spawn, proc_app_007)",
+      "[12:28:29] (proc_sys_017, heartbeat, ip_192.168.1.19)",
+      "[12:28:34] (file_/home/admin/docs/doc_017.txt, copy, file_/home/admin/docs/doc_016.txt)",
+      "[12:28:52] (file_/var/log/app_016.log, spawn, proc_app_020)",
+      "[12:28:57] (file_/var/log/app_005.log, spawn, proc_app_020)",
+      "[12:29:02] (proc_sys_002, open, file_/tmp/cache_010.dat)",
+      "[12:29:47] (proc_sys_012, rotate_log, file_/home/admin/docs/doc_036.txt)"
+    ]
+  },
+  {
+    "metadata": {
+      "community_id": "C007",
+      "pg_id": "PG_2026-04-01_12-22-30_2026-04-01_12-30-00_benign",
+      "time_span": {
+        "start": "2026-04-01 12:22:30",
+        "end": "2026-04-01 12:30:00"
+      }
+    },
+    "anomaly_contexts": {
+      "suspicious_nodes": [],
+      "node_scores": {},
+      "n_hop_neighbors": {},
+      "candidate_attack_subchains": [],
+      "anomaly_density": 0.0,
+      "bridge_intensity": null
+    },
+    "boundary_cues": {
+      "matched_anchor_nodes": [],
+      "split_boundary_markers": [
+        "BND_20260401120000_20260401121500",
+        "BND_20260401121500_20260401122230"
+      ]
+    },
+    "archived_traces": [
+      "[12:22:38] (proc_app_054, rotate_log, file_/var/log/app_004.log)",
+      "[12:23:28] (proc_app_077, open, file_/home/admin/docs/doc_030.txt)",
+      "[12:23:43] (proc_app_076, stat, file_/home/admin/docs/doc_038.txt)",
+      "[12:25:29] (proc_app_055, append, file_/var/log/app_045.log)",
+      "[12:26:31] (file_/home/admin/docs/doc_003.txt, copy, file_/var/log/app_025.log)",
+      "[12:27:05] (proc_sys_040, open, file_/var/log/app_023.log)",
+      "[12:27:09] (file_/var/log/app_039.log, copy, file_/var/log/app_022.log)",
+      "[12:27:12] (proc_app_039, stat, file_/var/log/app_004.log)",
+      "[12:28:02] (file_/var/log/app_016.log, spawn, proc_app_007)",
+      "[12:28:29] (proc_sys_017, heartbeat, ip_192.168.1.19)",
+      "[12:28:34] (file_/home/admin/docs/doc_017.txt, copy, file_/home/admin/docs/doc_016.txt)",
+      "[12:28:52] (file_/var/log/app_016.log, spawn, proc_app_020)",
+      "[12:28:57] (file_/var/log/app_005.log, spawn, proc_app_020)",
+      "[12:29:02] (proc_sys_002, open, file_/tmp/cache_010.dat)",
+      "[12:29:47] (proc_sys_012, rotate_log, file_/home/admin/docs/doc_036.txt)"
+    ]
+  },
+  {
+    "metadata": {
+      "community_id": "C008",
+      "pg_id": "PG_2026-04-01_12-22-30_2026-04-01_12-30-00_benign",
+      "time_span": {
+        "start": "2026-04-01 12:22:30",
+        "end": "2026-04-01 12:30:00"
+      }
+    },
+    "anomaly_contexts": {
+      "suspicious_nodes": [],
+      "node_scores": {},
+      "n_hop_neighbors": {},
+      "candidate_attack_subchains": [],
+      "anomaly_density": 0.0,
+      "bridge_intensity": null
+    },
+    "boundary_cues": {
+      "matched_anchor_nodes": [
+        "file_/tmp/cache_010.dat"
+      ],
+      "split_boundary_markers": [
+        "BND_20260401120000_20260401121500",
+        "BND_20260401121500_20260401122230"
+      ]
+    },
+    "archived_traces": [
+      "[12:22:38] (proc_app_054, rotate_log, file_/var/log/app_004.log)",
+      "[12:23:28] (proc_app_077, open, file_/home/admin/docs/doc_030.txt)",
+      "[12:23:43] (proc_app_076, stat, file_/home/admin/docs/doc_038.txt)",
+      "[12:25:29] (proc_app_055, append, file_/var/log/app_045.log)",
+      "[12:26:31] (file_/home/admin/docs/doc_003.txt, copy, file_/var/log/app_025.log)",
+      "[12:27:05] (proc_sys_040, open, file_/var/log/app_023.log)",
+      "[12:27:09] (file_/var/log/app_039.log, copy, file_/var/log/app_022.log)",
+      "[12:27:12] (proc_app_039, stat, file_/var/log/app_004.log)",
+      "[12:28:02] (file_/var/log/app_016.log, spawn, proc_app_007)",
+      "[12:28:29] (proc_sys_017, heartbeat, ip_192.168.1.19)",
+      "[12:28:34] (file_/home/admin/docs/doc_017.txt, copy, file_/home/admin/docs/doc_016.txt)",
+      "[12:28:52] (file_/var/log/app_016.log, spawn, proc_app_020)",
+      "[12:28:57] (file_/var/log/app_005.log, spawn, proc_app_020)",
+      "[12:29:02] (proc_sys_002, open, file_/tmp/cache_010.dat)",
+      "[12:29:47] (proc_sys_012, rotate_log, file_/home/admin/docs/doc_036.txt)"
+    ]
+  },
+  {
+    "metadata": {
+      "community_id": "C009",
+      "pg_id": "PG_2026-04-01_12-22-30_2026-04-01_12-30-00_benign",
+      "time_span": {
+        "start": "2026-04-01 12:22:30",
+        "end": "2026-04-01 12:30:00"
+      }
+    },
+    "anomaly_contexts": {
+      "suspicious_nodes": [],
+      "node_scores": {},
+      "n_hop_neighbors": {},
+      "candidate_attack_subchains": [],
+      "anomaly_density": 0.0,
+      "bridge_intensity": null
+    },
+    "boundary_cues": {
+      "matched_anchor_nodes": [],
+      "split_boundary_markers": [
+        "BND_20260401120000_20260401121500",
+        "BND_20260401121500_20260401122230"
+      ]
+    },
+    "archived_traces": [
+      "[12:22:38] (proc_app_054, rotate_log, file_/var/log/app_004.log)",
+      "[12:23:28] (proc_app_077, open, file_/home/admin/docs/doc_030.txt)",
+      "[12:23:43] (proc_app_076, stat, file_/home/admin/docs/doc_038.txt)",
+      "[12:25:29] (proc_app_055, append, file_/var/log/app_045.log)",
+      "[12:26:31] (file_/home/admin/docs/doc_003.txt, copy, file_/var/log/app_025.log)",
+      "[12:27:05] (proc_sys_040, open, file_/var/log/app_023.log)",
+      "[12:27:09] (file_/var/log/app_039.log, copy, file_/var/log/app_022.log)",
+      "[12:27:12] (proc_app_039, stat, file_/var/log/app_004.log)",
+      "[12:28:02] (file_/var/log/app_016.log, spawn, proc_app_007)",
+      "[12:28:29] (proc_sys_017, heartbeat, ip_192.168.1.19)",
+      "[12:28:34] (file_/home/admin/docs/doc_017.txt, copy, file_/home/admin/docs/doc_016.txt)",
+      "[12:28:52] (file_/var/log/app_016.log, spawn, proc_app_020)",
+      "[12:28:57] (file_/var/log/app_005.log, spawn, proc_app_020)",
+      "[12:29:02] (proc_sys_002, open, file_/tmp/cache_010.dat)",
+      "[12:29:47] (proc_sys_012, rotate_log, file_/home/admin/docs/doc_036.txt)"
+    ]
+  },
+  {
+    "metadata": {
+      "community_id": "C010",
+      "pg_id": "PG_2026-04-01_12-22-30_2026-04-01_12-30-00_benign",
+      "time_span": {
+        "start": "2026-04-01 12:22:30",
+        "end": "2026-04-01 12:30:00"
+      }
+    },
+    "anomaly_contexts": {
+      "suspicious_nodes": [],
+      "node_scores": {},
+      "n_hop_neighbors": {},
+      "candidate_attack_subchains": [],
+      "anomaly_density": 0.0,
+      "bridge_intensity": null
+    },
+    "boundary_cues": {
+      "matched_anchor_nodes": [],
+      "split_boundary_markers": [
+        "BND_20260401120000_20260401121500",
+        "BND_20260401121500_20260401122230"
+      ]
+    },
+    "archived_traces": [
+      "[12:22:38] (proc_app_054, rotate_log, file_/var/log/app_004.log)",
+      "[12:23:28] (proc_app_077, open, file_/home/admin/docs/doc_030.txt)",
+      "[12:23:43] (proc_app_076, stat, file_/home/admin/docs/doc_038.txt)",
+      "[12:25:29] (proc_app_055, append, file_/var/log/app_045.log)",
+      "[12:26:31] (file_/home/admin/docs/doc_003.txt, copy, file_/var/log/app_025.log)",
+      "[12:27:05] (proc_sys_040, open, file_/var/log/app_023.log)",
+      "[12:27:09] (file_/var/log/app_039.log, copy, file_/var/log/app_022.log)",
+      "[12:27:12] (proc_app_039, stat, file_/var/log/app_004.log)",
+      "[12:28:02] (file_/var/log/app_016.log, spawn, proc_app_007)",
+      "[12:28:29] (proc_sys_017, heartbeat, ip_192.168.1.19)",
+      "[12:28:34] (file_/home/admin/docs/doc_017.txt, copy, file_/home/admin/docs/doc_016.txt)",
+      "[12:28:52] (file_/var/log/app_016.log, spawn, proc_app_020)",
+      "[12:28:57] (file_/var/log/app_005.log, spawn, proc_app_020)",
+      "[12:29:02] (proc_sys_002, open, file_/tmp/cache_010.dat)",
+      "[12:29:47] (proc_sys_012, rotate_log, file_/home/admin/docs/doc_036.txt)"
+    ]
+  },
+  {
+    "metadata": {
+      "community_id": "C011",
+      "pg_id": "PG_2026-04-01_12-22-30_2026-04-01_12-30-00_benign",
+      "time_span": {
+        "start": "2026-04-01 12:22:30",
+        "end": "2026-04-01 12:30:00"
+      }
+    },
+    "anomaly_contexts": {
+      "suspicious_nodes": [],
+      "node_scores": {},
+      "n_hop_neighbors": {},
+      "candidate_attack_subchains": [],
+      "anomaly_density": 0.0,
+      "bridge_intensity": null
+    },
+    "boundary_cues": {
+      "matched_anchor_nodes": [],
+      "split_boundary_markers": [
+        "BND_20260401120000_20260401121500",
+        "BND_20260401121500_20260401122230"
+      ]
+    },
+    "archived_traces": [
+      "[12:22:38] (proc_app_054, rotate_log, file_/var/log/app_004.log)",
+      "[12:23:28] (proc_app_077, open, file_/home/admin/docs/doc_030.txt)",
+      "[12:23:43] (proc_app_076, stat, file_/home/admin/docs/doc_038.txt)",
+      "[12:25:29] (proc_app_055, append, file_/var/log/app_045.log)",
+      "[12:26:31] (file_/home/admin/docs/doc_003.txt, copy, file_/var/log/app_025.log)",
+      "[12:27:05] (proc_sys_040, open, file_/var/log/app_023.log)",
+      "[12:27:09] (file_/var/log/app_039.log, copy, file_/var/log/app_022.log)",
+      "[12:27:12] (proc_app_039, stat, file_/var/log/app_004.log)",
+      "[12:28:02] (file_/var/log/app_016.log, spawn, proc_app_007)",
+      "[12:28:29] (proc_sys_017, heartbeat, ip_192.168.1.19)",
+      "[12:28:34] (file_/home/admin/docs/doc_017.txt, copy, file_/home/admin/docs/doc_016.txt)",
+      "[12:28:52] (file_/var/log/app_016.log, spawn, proc_app_020)",
+      "[12:28:57] (file_/var/log/app_005.log, spawn, proc_app_020)",
+      "[12:29:02] (proc_sys_002, open, file_/tmp/cache_010.dat)",
+      "[12:29:47] (proc_sys_012, rotate_log, file_/home/admin/docs/doc_036.txt)"
+    ]
+  }
+]

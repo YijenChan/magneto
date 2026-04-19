@@ -1,0 +1,12 @@
+[
+  [
+    "ip_192.168.1.6",
+    "proc_app_031"
+  ],
+  [
+    "file_/var/log/app_050.log",
+    "proc_app_021",
+    "proc_sys_007",
+    "proc_sys_039"
+  ]
+]

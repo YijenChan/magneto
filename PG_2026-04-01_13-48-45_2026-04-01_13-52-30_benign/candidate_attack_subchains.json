@@ -1,0 +1,19 @@
+[
+  [
+    "ip_10.0.0.20",
+    "proc_app_060"
+  ],
+  [
+    "ip_10.0.0.21",
+    "proc_sys_002"
+  ],
+  [
+    "proc_app_043",
+    "proc_app_058"
+  ],
+  [
+    "domain_service19.internal",
+    "proc_app_051",
+    "proc_sys_026"
+  ]
+]

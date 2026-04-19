@@ -1,0 +1,8 @@
+{
+  "num_pg_dirs": 139,
+  "num_cdg_nodes": 1410,
+  "num_cdg_edges": 6601,
+  "num_temporal_continuation_edges": 87,
+  "num_anchor_based_edges": 4383,
+  "num_entity_alignment_edges": 2221
+}
